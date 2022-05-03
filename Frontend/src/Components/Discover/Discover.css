@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+#navbar{
+    background-color:black;
+    margin-top:30px;
+}
+ul{
+    font-size: 20px;
+    
+}
+
+li{
+    display:inline;
+    float:right;
+    margin-right:30px;
+    cursor:pointer;
+    padding-top: 10px;
+    
+}
+
+#logo_li{
+    float:left;
+    
+}
+
+#logo_img{
+    width:150px;
+}
+
+#maincontainer{
+    display:block;
+    clear:both;
+    text-align:center;
+    
+    /* background-color: blanchedalmond; */
+    
+}
+
+#discoverheader{
+    font-family: 'Sacramento', cursive;
+    font-size:50px;
+    padding-bottom: 5px !important;
+    margin:0 !important;
+}
+
+#profile{
+    position:relative;
+    background-color: white;
+    margin:auto;
+    width:450px;
+    height:500px;
+    border-radius: 25px;
+    border: 2px solid #E3F600;
+    box-shadow:0px 18px 53px 0px rgba(0,0,0,0.3);
+    
+}
+
+#allcards{
+    display:flex;
+    justify-content:center;
+    
+}
+
+.swipe{
+    position:absolute;
+}
+
+.swipebuttons{
+    
+    display:flex;
+    
+    
+}
+.swipebuttons .MuiIconButton-root{
+    background-color: white;
+    box-shadow:0px 18px 53px 0px rgba(0,0,0,0.3)!important;
+    padding:2vh;
+}
+#nobutton{
+    color:#ec5e6f !important;
+    position:fixed;
+    bottom:5vh;
+    left: 25%;
+}
+#yesbutton{
+    color:#76e2b3 !important;
+    position:fixed;
+    bottom:5vh;
+    left: 70%;
+}
