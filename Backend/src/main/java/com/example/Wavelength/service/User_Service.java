@@ -20,9 +20,9 @@ public class User_Service {
         return userRepository.findAll();
     }
 
-    public String getUserFirstName() {
-        return userRepository.findFirstName();
-    }
+//    public String getUserFirstName() {
+//        return userRepository.findFirstName();
+//    }
 
     public void addUsers(User user) {
         Optional<User> userOptional= userRepository.findVendorByEmail(user.getEmail());
@@ -34,15 +34,15 @@ public class User_Service {
         userRepository.save(user);
     }
 
-    public void deleteUsers(String email) {
-        Boolean exist = userRepository.userEmailExists(email);
-        if (!exist)
-        {
-            throw new IllegalStateException("vendor with email" + email + "not found");
-        }
-        else
-        {
-            userRepository.deleteById(userRepository.findUserIdByEmail(email));
-        }
-    }
+//    public void deleteUsers(String email) {
+//        Boolean exist = userRepository.userEmailExists(email);
+//        if (!exist)
+//        {
+//            throw new IllegalStateException("vendor with email" + email + "not found");
+//        }
+//        else
+//        {
+//            userRepository.deleteById(userRepository.findUserIdByEmail(email));
+//        }
+//    }
 }

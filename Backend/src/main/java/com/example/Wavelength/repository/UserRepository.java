@@ -22,13 +22,13 @@ public interface UserRepository extends JpaRepository<User, Long> {
 //    @Query("SELECT s FROM Vendor s WHERE s.tUserId=?1")
 //    Optional<Vendor> findVendorBytUserID(String tUserId);
 
-    //returning string
-    @Query("SELECT S FROM USER S WHERE ")
-    String findFirstName();
-    //returning boolean
-    @Query("SELECT s FROM User s WHERE s.email =?1")
-    Boolean userEmailExists(String email);
-
-    @Query("SELECT s.ID FROM User s WHERE s.email =?1 ")
-    Long findUserIdByEmail(String email);
+//    //returning string
+//    @Query("SELECT S FROM USER S WHERE ")
+//    String findFirstName();
+//    //returning boolean
+//    @Query("SELECT s FROM User s WHERE s.email =?1")
+//    Boolean userEmailExists(String email);
+//
+//    @Query("SELECT s.ID FROM User s WHERE s.email =?1 ")
+//    Long findUserIdByEmail(String email);
 }

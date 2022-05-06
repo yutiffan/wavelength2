@@ -3,6 +3,7 @@ import com.example.Wavelength.service.User_Service;
 import com.example.Wavelength.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import com.example.Wavelength.repository.UserRepository;
 
 import java.util.List;
 
@@ -18,6 +19,10 @@ public class User_Controller {
         this.userService= userservice;
     }
 
+    @Autowired
+    UserRepository userrepository;
+
+
     @GetMapping
     public List<User> getUsers() { return userService.getUsers();}
 
@@ -26,13 +31,20 @@ public class User_Controller {
 //        return userService.
 //    }
 
-    @PostMapping
-    public void postUser(@RequestBody(required = false) User user) {
-        userService.addUsers(user);
-    }
+//    @PostMapping
+//    public void postUser(@RequestBody(required = false) User user) {
+//        userService.addUsers(user);
+//    }
 
-    @DeleteMapping(path = "{email}")
-    public void deleteUser(@PathVariable("email") String email) {
-        userService.deleteUsers(email);
+//    @DeleteMapping(path = "{email}")
+//    public void deleteUser(@PathVariable("email") String email) {
+//        userService.deleteUsers(email);
+//    }
+
+    @PostMapping("/users")
+    public void createUser(@RequestBody User user){
+        userrepository.save(new User(user.getFirst_name(), user.getLast_name(),
+                user.getGender(), user.getPhonenum(), user.getEmail(), user.getAge()) );
+
     }
 }
