@@ -28,7 +28,7 @@ function Discover(){
             name:'pete',
         },
         {
-            name:'jullie',
+            name:'kelly',
         }
 
     ]);

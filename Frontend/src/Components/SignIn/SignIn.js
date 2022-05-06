@@ -64,12 +64,7 @@ function SignIn(){
 
         return all_errors;
     };
-    //const signup = async (params) => {
- // await fetch()......
-// return {
-//     status: "ok"
-//    }
-    
+
     
 
     return (

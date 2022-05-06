@@ -14,7 +14,7 @@ li{
     float:right;
     margin-right:30px;
     padding-top: 10px;
-    
+    height:60px;
 }
 
 #logo_li{
@@ -25,6 +25,7 @@ li{
 
 #logo_img{
     width:150px;
+    
 }
 
 #signincontainer{
@@ -37,7 +38,7 @@ li{
 }
 #mainlogo{
     width:300px;
-    
+    margin-bottom: 10px;
 }
 
 #signinform{
@@ -45,11 +46,15 @@ li{
     border-radius: 25px;
     border: 2px solid #E3F600;
     width:400px;
-    height:500px;
+    height:430px;
     margin:auto;
     text-align:left;    
-    padding:50px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:20px;
+    margin-bottom:50px;
 }
+
 #signinheader{
     text-align:center;
     font-size: 30px !important;
